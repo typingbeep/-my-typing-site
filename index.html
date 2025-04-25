@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>माय टाइपिंग एकेडमी</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>माय टाइपिंग एकेडमी</h1>
+        <nav>
+            <a href="index.html">होम</a>
+            <a href="tests.html">टेस्ट सीरीज</a>
+        </nav>
+    </header>
+    <main>
+        <section id="typing-test">
+            <h2>टाइपिंग टेस्ट</h2>
+            <p id="sample-text">The quick brown fox jumps over the lazy dog.</p>
+            <textarea id="input-text" rows="4" cols="50"></textarea>
+            <button onclick="startTest()">टेस्ट शुरू करें</button>
+            <p id="result"></p>
+        </section>
+        <section id="audio-test">
+            <h2>ऑडियो टाइपिंग टेस्ट</h2>
+            <audio controls>
+                <source src="audio/sample-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <textarea id="audio-input" rows="4" cols="50"></textarea>
+            <button onclick="submitAudioTest()">जमा करें</button>
+            <p id="audio-result"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
